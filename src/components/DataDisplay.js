@@ -1,6 +1,7 @@
+
 import React, { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
-import './DataDisplay.css';
+import { Link } from 'react-router-dom';
 
 const DataDisplay = () => {
   const { data, loading, error } = useContext(DataContext);
@@ -10,17 +11,15 @@ const DataDisplay = () => {
 
   return (
     <div>
-      <h1>Fetched Data in DataDisplay file</h1>
+      <h1>Fetched Data</h1>
       <ul>
-        {data.map((item) => {
-            return (
-            <div key={item.id}>
-                <li>{item.id}</li>
-               <li >{item.title}</li>
-          </div>)
-          
-        })}
+        {data.map(item => (
+          <li key={item.id}>{item.title}</li>
+        ))}
       </ul>
+      <nav>
+        <Link to="/data-name">Go to Data Name</Link>
+      </nav>
     </div>
   );
 };

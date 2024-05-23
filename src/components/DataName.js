@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
 
@@ -9,17 +10,11 @@ const DataName = () => {
 
   return (
     <div>
-      <h1>Fetched Data from DataName</h1>
+      <h1>Fetched Data Names</h1>
       <ul>
-        {data.map((item) => {
-            return (
-            <div key={item.id}>
-                <li>{item.id}</li>
-                
-               <li >.{item.body}</li>
-          </div>)
-          
-        })}
+        {data.map(item => (
+          <li key={item.id}>{item.body}</li> 
+        ))}
       </ul>
     </div>
   );
