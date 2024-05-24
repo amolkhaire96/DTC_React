@@ -1,6 +1,9 @@
 a {
-  list-style-type: none;
-  display: block;
+  
+  display: inline;
   padding: 5px;
   text-decoration: none;
+}
+li{
+    list-style-type: none;
 }

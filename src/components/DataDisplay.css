@@ -1,5 +1,35 @@
-li {
-    list-style-type: none;
-    display: inline;
-    padding: 5px;
+.name li {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.dataFlex {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+}
+.dataFlex button {
+  margin-left: 100px;
+  height: 30px;
+  margin-top: 10px;
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 5px;
+}
+.dataId {
+  font-size: 120px;
+  padding-left: 240px;
+}
+.dataFlex {
+  border: 5px solid orchid;
 }

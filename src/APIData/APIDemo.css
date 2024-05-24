@@ -1,0 +1,50 @@
+.main {
+  color: white;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716422400&semt=ais_user");
+    float: left;
+    width: 820px;
+    height: 600px;
+    padding-left: 80px;
+    position: relative;
+}
+.main h1 {
+    font-size: 56px;
+}
+
+.logo {
+  width: 50px;
+}
+.navBar {
+  display: flex;
+  gap: 350px;
+  padding: 20px;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+}
+.course {
+  display: flex;
+  gap: 20px;
+  line-height: 0;
+}
+button {
+  margin-left: 100px;
+  height: 40px;
+  width: 180px;
+  margin-top: 10px;
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 5px;
+}
+.sideBar{
+    float: right;
+    border: 5px solid rgb(247, 159, 159);
+    top: 0;
+    position: relative;
+    margin-top: 50px  ;
+}
+.div3{
+    clear: both;
+}
