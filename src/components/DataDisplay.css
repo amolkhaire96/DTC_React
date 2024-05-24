@@ -13,8 +13,8 @@ ul {
   gap: 10px;
 }
 .dataFlex {
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
   flex-basis: 250px;
 }
 .dataFlex button {
