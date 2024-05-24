@@ -28,7 +28,7 @@ const DataName = () => {
           <li>{item.body}</li> 
           <button onClick={item.id === 1 ? handleClick : undefined}>View Details</button>
           </div>
-        ))}
+        )).filter((element, index) => index < 5)}
       </ul>
       {viewDetails && <APIDemo />}
     </div>
